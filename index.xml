@@ -23,7 +23,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://timothyelder.com/about/</guid>
-      <description>Timothy Elder   I&amp;rsquo;m a PhD candidate in Sociology at the University of Chicago and I study topics in the sociology of medicine, knowledge, social network analysis and death and dying. My dissertation investigates how physicians create plans of care for their patients: how they navigate conflict and build consensus, how they prognosticate and think about possible futures, and how they do all of this while honoring their obligations to ensure the well-being of their patients and colleagues is maintained.</description>
+      <description>Timothy Elder I&amp;rsquo;m a PhD candidate in Sociology at the University of Chicago and I study topics in the sociology of medicine, knowledge, social network analysis and death and dying. My dissertation investigates how physicians create plans of care for their patients: how they navigate conflict and build consensus, how they prognosticate and think about possible futures, and how they do all of this while honoring their obligations to ensure the well-being of their patients and colleagues is maintained.</description>
     </item>
     
     <item>
@@ -32,7 +32,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://timothyelder.com/cv/</guid>
-      <description>#the-canvas { border: 1px solid black; direction: ltr; width: 100%; height: auto; display: none; } #paginator { display: none; text-align: center; margin-bottom: 10px; } #loadingWrapper { display: none; justify-content: center; align-items: center; width: 100%; height: 350px; } #loading { display: inline-block; width: 50px; height: 50px; border: 3px solid #d2d0d0;; border-radius: 50%; border-top-color: #383838; animation: spin 1s ease-in-out infinite; -webkit-animation: spin 1s ease-in-out infinite; } @keyframes spin { to { -webkit-transform: rotate(360deg); } } @-webkit-keyframes spin { to { -webkit-transform: rotate(360deg); } }  Previous Next &amp;nbsp; &amp;nbsp; Page:  /       window.</description>
+      <description>Previous Next &amp;nbsp; &amp;nbsp; Page: / You can download my CV here and the source code for it on my Github page here.</description>
     </item>
     
     <item>
@@ -42,7 +42,7 @@
       
       <guid>https://timothyelder.com/projects/</guid>
       <description>My work is unified by an interest in how knowledge is organized and mustered to inform the practical work of social institutions like medicine and the academy.
- Collaboration and Decision Making In Medical Specialties Using interview and ethnographic methods my dissertation research explores the relatively new medical sub-specialty of Hospice and Palliative Medicine, which is oriented toward the care of patients with chronic and life-limiting illness. I explore how these kinds of clinicians understand their role as consultants in hospitals and collaborate with their colleagues from other specialties.</description>
+Collaboration and Decision Making In Medical Specialties Using interview and ethnographic methods my dissertation research explores the relatively new medical sub-specialty of Hospice and Palliative Medicine, which is oriented toward the care of patients with chronic and life-limiting illness. I explore how these kinds of clinicians understand their role as consultants in hospitals and collaborate with their colleagues from other specialties.</description>
     </item>
     
   </channel>
