@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on timothyelder.com</title>
+    <link>https://timothyelder.com/blog/</link>
+    <description>Recent content in Blogs on timothyelder.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Thu, 04 Nov 2021 17:13:02 -0500</lastBuildDate><atom:link href="https://timothyelder.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog Post</title>
+      <link>https://timothyelder.com/blog/blog-post/</link>
+      <pubDate>Thu, 04 Nov 2021 17:13:02 -0500</pubDate>
+      
+      <guid>https://timothyelder.com/blog/blog-post/</guid>
+      <description>here is some text and more</description>
+    </item>
+    
+  </channel>
+</rss>
