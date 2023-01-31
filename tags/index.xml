@@ -6,34 +6,6 @@
     <description>Recent content in Tags on timothyelder.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© {year}</copyright>
-    <lastBuildDate>Sun, 29 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://timothyelder.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>hugo</title>
-      <link>https://timothyelder.com/tags/hugo/</link>
-      <pubDate>Sun, 29 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://timothyelder.com/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>math</title>
-      <link>https://timothyelder.com/tags/math/</link>
-      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://timothyelder.com/tags/math/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shortcodes</title>
-      <link>https://timothyelder.com/tags/shortcodes/</link>
-      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://timothyelder.com/tags/shortcodes/</guid>
-      <description></description>
-    </item>
-    
+    <copyright>© {year}</copyright><atom:link href="https://timothyelder.com/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
