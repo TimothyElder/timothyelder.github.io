@@ -2,12 +2,12 @@
 <html lang="en-us">
 
 <head>
-  <title>Projects | timothyelder.com</title>
+  <title>Math Typesetting | timothyelder.com</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="A brief guide to setup KaTeX">
+  <meta name="keywords" content="gohugo , hugo , go , blog">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,13 +44,13 @@
     { 
       "@context": "http://schema.org", 
       "@type": "WebSite", 
-      "url": "https:\/\/timothyelder.com\/projects\/",
-      "name": "Projects",
+      "url": "https:\/\/timothyelder.com\/plaintext\/math-typesetting\/",
+      "name": "Math Typesetting",
       "author": {
         "@type": "Person",
         "name": ""
       },
-      "description": ""
+      "description": "A brief guide to setup KaTeX"
     }
   
   </script>
@@ -87,7 +87,8 @@
       </li>
     
       <li>
-        <a  href="/plaintext">plaintext</a>
+        <a  class="active"
+         href="/plaintext">plaintext</a>
       </li>
     
   </ul>
@@ -102,28 +103,63 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">Projects</h1>
-            
+            <h1 id="post__title">Math Typesetting</h1>
+            <time datetime="2020-06-05 00:00:00 &#43;0000 UTC" class="post__date">Jun 5 2020</time> 
           </header>
           <article class="post__content">
               
-<p><em>My work is unified by an interest in how knowledge is organized and mustered to inform the practical work of social institutions like medicine and the academy.</em></p>
-<figure><img src="/images/boards_subspecialty_dendograms.png"/>
-</figure>
-
-<h4 id="collaboration-and-decision-making-in-medical-specialties">Collaboration and Decision Making In Medical Specialties</h4>
-<p>Using interview and ethnographic methods my dissertation research explores the relatively new medical sub-specialty of Hospice and Palliative Medicine, which is oriented toward the care of patients with chronic and life-limiting illness. I explore how these kinds of clinicians understand their role as consultants in hospitals and collaborate with their colleagues from other specialties. In particular, I am interested in understanding how physicians working in very different medical specialties are able to create shared criteria of success and failure in the course of providing care for patients suffering terminal illnesses.</p>
-<h4 id="status-and-subfield-sociological-specialization-across-academic-departments">Status and Subfield: Sociological Specialization across Academic Departments</h4>
-<figure><img src="/images/from_asa_data_2020_mds_gender.png"/>
-</figure>
-
-<p>The fundamental insights of the Sociology of Science and of Knowledge is that our epistemic endeavors are not solely governed by the ideals of the scientific method. Recognition, personal achievement and career advancement in science is influenced by the individual characteristics of the scholars that produce knowledge. Using the discipline of sociology as a case study, we examine how different subfields are distributed across PhD granting departments in the United States and how the demographic composition of these different subfields influences their relative status.</p>
-<p>In collaboration with <a href="https://austinkozlowski.com/" 
+<p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
+<p>In this example we will be using <a href="https://katex.org/" 
   
    target="_blank" rel="noreferrer noopener" 
->Austin Kozlowski</a>.</p>
+>KaTeX</a></p>
+<ul>
+<li>Create a partial under <code>/layouts/partials/math.html</code></li>
+<li>Within this partial reference the <a href="https://katex.org/docs/autorender.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Auto-render Extension</a> or host these scripts locally.</li>
+<li>Include the partial in your templates like so:</li>
+</ul>
+<pre><code>{{ if or .Params.math .Site.Params.math }}
+{{ partial &quot;math.html&quot; . }}
+{{ end }}
+</code></pre>
+<ul>
+<li>To enable KaTex globally set the parameter <code>math</code> to <code>true</code> in a project&rsquo;s configuration</li>
+<li>To enable KaTex on a per page basis include the parameter <code>math: true</code> in content files.</li>
+</ul>
+<p><strong>Note:</strong> Use the online reference of <a href="https://katex.org/docs/supported.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Supported TeX Functions</a>
 
 
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css" integrity="sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js" integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+</p>
+<h3 id="examples">Examples<a class="anchor" href="#examples">#</a></h3>
+<p>Inline math: $$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$</p>
+<p>Block math:</p>
+<p>$$
+\sigma(t) = \cfrac{1}{1 + e^{-t}}
+$$</p>
+
+              
+                  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
               
           </article>
 

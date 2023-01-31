@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>timothyelder.com</title>
-    <link>https://timothyelder.com/</link>
-    <description>Recent content on timothyelder.com</description>
+    <title>PlainText Working Group on timothyelder.com</title>
+    <link>https://timothyelder.com/plaintext/</link>
+    <description>Recent content in PlainText Working Group on timothyelder.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Mon, 30 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://timothyelder.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://timothyelder.com/plaintext/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction and Overview</title>
       <link>https://timothyelder.com/plaintext/intro-and-overview/</link>
@@ -45,34 +45,6 @@
 YouTube Privacy Enhanced Shortcode Twitter Simple Shortcode “In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”
 — Jan Tschichold pic.twitter.com/gcv7SrhvJb
 &amp;mdash; Graphic Design History (@DesignReviewed) January 17, 2019 Vimeo Simple Shortcode </description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>https://timothyelder.com/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timothyelder.com/about/</guid>
-      <description>Timothy Elder I&amp;rsquo;m a PhD candidate in Sociology at the University of Chicago and I study topics in the sociology of medicine, knowledge, social network analysis and death and dying. My dissertation investigates how physicians create plans of care for their patients: how they navigate conflict and build consensus, how they prognosticate and think about possible futures, and how they do all of this while honoring their obligations to ensure the well-being of their patients and colleagues is maintained.</description>
-    </item>
-    
-    <item>
-      <title>cv</title>
-      <link>https://timothyelder.com/cv/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timothyelder.com/cv/</guid>
-      <description>Previous Next &amp;nbsp; &amp;nbsp; Page: / You can download my CV here and the source code for it on my Github page here.</description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>https://timothyelder.com/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timothyelder.com/projects/</guid>
-      <description>My work is unified by an interest in how knowledge is organized and mustered to inform the practical work of social institutions like medicine and the academy.
-Collaboration and Decision Making In Medical Specialties Using interview and ethnographic methods my dissertation research explores the relatively new medical sub-specialty of Hospice and Palliative Medicine, which is oriented toward the care of patients with chronic and life-limiting illness. I explore how these kinds of clinicians understand their role as consultants in hospitals and collaborate with their colleagues from other specialties.</description>
     </item>
     
   </channel>
