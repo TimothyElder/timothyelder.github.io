@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>project organization on timothyelder.com</title>
+    <link>https://timothyelder.com/tags/project-organization/</link>
+    <description>Recent content in project organization on timothyelder.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Fri, 03 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://timothyelder.com/tags/project-organization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Terminal and Project Organization</title>
+      <link>https://timothyelder.com/plaintext/session-1/</link>
+      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyelder.com/plaintext/session-1/</guid>
+      <description>The Terminal Switching to a plain text workflow requires that you adjust the way you interact with your computer. Rather than pointing and clicking and navigating through different windows we will be using what is a primitive technology in computing: the Terminal. It was once the case that all interactions with a computer were done with nothing more than a keyboard, not even a mouse. Of course computing has come a long way and most of your interactions with your computer take place with a mouse, touch pad or touch screen and it can be intimidating to approach the terminal, but it is really quite easy to use and helps for you to learn where things are actually located on your computer.</description>
+    </item>
+    
+  </channel>
+</rss>

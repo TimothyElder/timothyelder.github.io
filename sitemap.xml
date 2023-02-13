@@ -3,13 +3,61 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://timothyelder.com/</loc>
-    <lastmod>2023-01-30T00:00:00+00:00</lastmod>
+    <lastmod>2023-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://timothyelder.com/tags/installation/</loc>
+    <lastmod>2023-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://timothyelder.com/tags/latex/</loc>
+    <lastmod>2023-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://timothyelder.com/tags/macos/</loc>
+    <lastmod>2023-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://timothyelder.com/plaintext/macos-install/</loc>
+    <lastmod>2023-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://timothyelder.com/tags/pandoc/</loc>
+    <lastmod>2023-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://timothyelder.com/tags/</loc>
+    <lastmod>2023-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://timothyelder.com/tags/windows/</loc>
+    <lastmod>2023-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://timothyelder.com/plaintext/winods-install/</loc>
+    <lastmod>2023-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://timothyelder.com/tags/command-line/</loc>
+    <lastmod>2023-02-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://timothyelder.com/tags/project-organization/</loc>
+    <lastmod>2023-02-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://timothyelder.com/plaintext/session-1/</loc>
+    <lastmod>2023-02-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://timothyelder.com/tags/usage/</loc>
+    <lastmod>2023-02-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://timothyelder.com/plaintext/intro-and-overview/</loc>
     <lastmod>2023-01-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://timothyelder.com/plaintext/</loc>
     <lastmod>2023-01-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://timothyelder.com/tags/math/</loc>
+    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://timothyelder.com/plaintext/math-typesetting/</loc>
+    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://timothyelder.com/plaintext/rich-text/</loc>
+    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://timothyelder.com/tags/shortcodes/</loc>
+    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://timothyelder.com/about/</loc>
   </url><url>
@@ -18,7 +66,5 @@
     <loc>https://timothyelder.com/cv/</loc>
   </url><url>
     <loc>https://timothyelder.com/projects/</loc>
-  </url><url>
-    <loc>https://timothyelder.com/tags/</loc>
   </url>
 </urlset>

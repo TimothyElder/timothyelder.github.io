@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Windows Install Instructions | timothyelder.com</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="How to Install the Software on Windows">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.caa6779fcd614c30bb6ccecf64f8fa028d4c839f5d4f7eaee9609a9411ff0284.css" integrity="sha256-yqZ3n81hTDC7bM7PZPj6Ao1Mg59dT36u6WCalBH/AoQ="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    { 
+      "@context": "http://schema.org", 
+      "@type": "WebSite", 
+      "url": "https:\/\/timothyelder.com\/plaintext\/winods-install\/",
+      "name": "Windows Install Instructions",
+      "author": {
+        "@type": "Person",
+        "name": ""
+      },
+      "description": "How to Install the Software on Windows"
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">home</a>
+      </li>
+    
+      <li>
+        <a  href="/about">about</a>
+      </li>
+    
+      <li>
+        <a  href="/cv">cv</a>
+      </li>
+    
+      <li>
+        <a  href="/projects">projects</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/plaintext">plaintext</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Windows Install Instructions</h1>
+            <time datetime="2023-02-04 00:00:00 &#43;0000 UTC" class="post__date">Feb 4 2023</time> 
+          </header>
+          <article class="post__content">
+              
+<h2 id="windows-installation">Windows Installation<a class="anchor" href="#windows-installation">#</a></h2>
+<p>First a moment for evangelism. Windows is far and away the most popular operating system in the world for desktops and laptops, with 76% of the <a href="https://gs.statcounter.com/os-market-share/desktop/worldwide/#monthly-202208-202209-bar" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>global market share</a>, followed by macOs (16%) and then Linux (5%). Pretty much everyone has a working familiarity with Windows, and what more it is meant to be user friendly for the average person. But Windows offers a much more What You See Is What You Get Approach to computing. Window&rsquo;s user-friendliness comes at the cost of controlling every part of your operating system.</p>
+<p>Yes, Apple products are more cost prohibitive than products that use Windows, and Linux can be intimidating as it has comparatively less support than the more popular alternatives. With those caveats, macOs and Linux (both UNIX based operating systems) are comparatively better development platforms for the kind of computing tasks we will be covering in this workshop. For one, their file structure is much more intuitive and includes fewer redundancies, so finding where to install the software we are working with is going to be achieved much quicker on macOs or Linux than on Windows. This is to say that Windows users have a few extra steps in the noble task of switching to plain text but this guide will help you every step of the way.</p>
+<h3 id="latex-pandoc-and-git">LaTeX, <code>pandoc</code>, and <code>Git</code><a class="anchor" href="#latex-pandoc-and-git">#</a></h3>
+<h4 id="latex">LaTeX</h4>
+<p>\LaTeX, typically pronounced <em>lay</em>-tek or <em>lah</em>-tex, is a program for typesetting documents developed in the late 70s. It allows you to create really pretty documents and in particular, documents that include mathematical notation, figures, and tables. It can be used to typeset pretty much anything that needs typesetting.</p>
+<p>LaTeX is a pretty big program (around 5GBs) so you will need sufficient space on your hard drive to accommodate it. Depending on your system you will need to navigate to the <a href="https://www.latex-project.org/get/#tex-distributions" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>install page</a> and pick the version that is appropriate for your OS. Follow the installation instructions as you would any other program. This takes a little time due to its size.</p>
+<h4 id="pandoc"><code>pandoc</code></h4>
+<p><code>pandoc</code> bills itself as a &ldquo;universal document converter&rdquo; and can be used to convert files into different formats. It was primarily developed to take documents written in <a href="https://en.wikipedia.org/wiki/Markdown" 
+  
+   target="_blank" rel="noreferrer noopener" 
+><code>markdown</code></a> and convert them into other, prettier formats. When combined with LaTeX, <code>pandoc</code> is a pretty powerful tool and we can use it to write in <code>markdown</code> and then simultaneously convert that document into Word, PDF, Tex and HTML. It is this software that allows you to integrate your work with your colleagues that might not want to make the shift to a plain text workflow. Further, you can actually take in documents in a common format like Word and convert them to plain text.</p>
+<p>Just like for LaTeX above, navigate to the <a href="https://pandoc.org/installing.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>install page</a>, and download the installer appropriate to your OS. <code>pandoc</code> is significantly smaller than LaTeX so you should not have an issue installing it.</p>
+<h4 id="git-and-github"><code>Git</code> and Github</h4>
+<p>Git is a version control system which monitors a directory for changes. Think of it as the &ldquo;Track Changes&rdquo; option for a Word Document, but it tracks all the changes that occur to a group of files in a directory. Git is a program with a command line user interface so you will need to know your way around a terminal to use it. It also allows you to take advantage of open source softeware freely available on <a href="https://github.com/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Github</a>.</p>
+<p>GitHub is a website that hosts repositories of software, and if you sign up for a free account, acts like a cloud backup for your projects when they are in plaintext. All the software hosted on GitHub can be installed using <code>Git</code>, and we will use it to install the templates we are going to be using for our documents. Install <code>Git</code> <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>here</a>.</p>
+<h3 id="installing-document-templates">Installing Document Templates<a class="anchor" href="#installing-document-templates">#</a></h3>
+<p>Now that you have LaTeX and <code>pandoc</code> installed you are ready to start using plain text software for your research and writing. But if you want to have nicely formatted documents that handle all the bells and whistles that you need for your scientific and social scientific writing then you need to do just a few more steps. This is the harder part of the installation process but I will take you step by step through it.</p>
+<h4 id="what-are-we-installing">What are we installing?</h4>
+<p>We are going to be installing two collections of files: the first is a set of templates that we use to take in our raw plain text files and typeset them into beautiful PDF, HTML, and (to satisfy your Word dependent colleagues) Word Documents. These templates are what <code>pandoc</code> uses to make pretty output, but the templates themselves rely upon what are called LaTeX class and style files. These are the second collection of files we are installing. A quick preview of how to use this software. When you are done writing your document or you want to see what it ultimately will look like, you will go to your terminal and tell <code>pandoc</code> essentially &ldquo;take my plain text markdown file and make it into a PDF document&rdquo; by typing in a few commands.</p>
+<p><code>pandoc</code> then converts the plain text data (the prose, tables, and figures you&rsquo;ve written and created) into a PDF using LaTeX as the software to typeset it. It isn&rsquo;t the case that LaTeX understands what markdown is, but <code>pandoc</code> is super nifty and actually does an intermediate step that you don&rsquo;t see where it converts your markdown formatted plain text file into a LaTeX file before then typesetting it. Because these are, strictly speaking, two different processes which are done by two different pieces of software that are talking to one another, we need to install the templates into two different places on your computer, where LaTeX and <code>pandoc</code>, respectively, look for files.</p>
+<p>We are going to be installing the two collections of templates for typesetting documents from my GitHub page using <code>Git</code>. This is actually a very straight forward and easy process but feels really overwhelming at first. All you need to do is open a terminal, <code>cd</code> to the place that we want the template files to be and tell <code>Git</code> to download them.</p>
+<p>The first set of templates is in a repository called <a href="https://github.com/TimothyElder/pandoc-templates" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>pandoc-templates</a> and includes the templates that take in our markdown files and convert them into LaTeX files. The second is a set of document class and style files that include all the details for how the software will typeset our documents with LaTeX. These can be found in the repository <a href="https://github.com/TimothyElder/latex-custom-kjh" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>latex-custom-kjh</a>. Finally, we will also install a template directory, <a href="https://github.com/TimothyElder/md-starter" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>md-starter</a>, which includes template markdown and <code>Make</code> files which you can use for pretty much any document. Don&rsquo;t worry about what these are yet, we will cover that shortly when we start using them.</p>
+<p>Ensure that that the software you need is installed by running the following code in a terminal:</p>
+<pre><code class="language-sh">pandoc --version
+
+latex --version
+
+git --version
+</code></pre>
+<p>Each of these commands, if the software is installed, will print out version information. If you the software is not installed then your terminal will say something like <code>python: command not found</code> or <code>latex: command not found</code> which means something has gone wrong and you will have to attempt to install the software again. <em><strong>NOTE</strong></em>: Go to the appendix below for learning out how to add to your PATH variable which could solve your problem for you.</p>
+<p>You need to make sure that you create a directory and a sub-directory the custom LaTeX templates, class and style files. Run the following code (changing the paths for your machine):</p>
+<pre><code class="language-sh">mkdir C:\texmf &amp;&amp; mkdir C:\texmf\tex &amp;&amp; mkdir C:\texmf\tex\latex
+</code></pre>
+<p>This creates a directory where you install the custom class and style files for LaTeX. With those directories made you can install the templates into their proper locations with the following code (make sure to change the paths to match your computer):</p>
+<pre><code class="language-sh">cd C:\Users\Timot\AppData\Roaming
+git clone https://github.com/TimothyElder/pandoc-templates.git
+ren &quot;pandoc-templates&quot; &quot;.pandoc&quot;
+
+cd C:\texmf\tex\latex
+git clone https://github.com/TimothyElder/latex-custom-kjh.git
+
+cd C:\Users\Timot\Documents
+git clone https://github.com/timothyelder/md-starter
+
+</code></pre>
+<p>Windows has an extra step which includes you adding a directory to your LaTeX installation so it knows where to look. To do that do the following steps:</p>
+<ol>
+<li>Start MiKTeX Console (either find it in the Start menu or search for it in the search bar) and open the Settings page.</li>
+<li>Click the Directories tab.</li>
+<li>Click the Add button and browse to the texmf root directory created earlier (<code>C:\texmf</code>).</li>
+</ol>
+<p>Make sure that you change all the paths to match your machine otherwise you get lots of errors and nothing will work. If you did everything above right, Congratulations! You are one step closer to making beautiful and reproducible documents in plain text.</p>
+<p>The template and style files we installed will handle typesetting our documents so they appear the way we want, but there are a few other features of academic papers that we might want to include that requires just a few more pieces of software. For one, you will likely be mounting an argument or writing in an area of your discipline that requires you reference past works. So you will need a bibliography, and you will probably want to include tables, figures and diagrams that you will reference in the body of your text. It is a pain having to format a bibliography yourself or to number each table and figure. What more, it is particularly annoying when you decide to rearrange your paper and then have to rearrange the number of all the tables and figures in the text.</p>
+<p>There are a few key pieces of software that Windows does not come installed with that you will need to take the extra step of installing.</p>
+<h3 id="winget-package-manager"><code>winget</code> Package Manager<a class="anchor" href="#winget-package-manager">#</a></h3>
+<p><code>winget</code> is a command line based package manager for Windows that helps with installing other pieces of software. It is part of App Installer which you can download and install <a href="https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4NNS1?hl=en-us&amp;gl=us&amp;rtc=1" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>here</a>.</p>
+<h3 id="make">Make<a class="anchor" href="#make">#</a></h3>
+<p>Make is a tool that handles the creation of files from some source material and is super helpful when you need to repetitively run the same programs in the same order over and over again, such as when you are editing and typesetting your next paper. With <code>winget</code> installed, Make is super easy to get, just run this line of code in a command prompt on your computer:</p>
+<pre><code class="language-sh">winget install GnuWin32.Make
+</code></pre>
+<h3 id="python">Python<a class="anchor" href="#python">#</a></h3>
+<p>Python is a modern general computing language that is very common in the sciences and social sciences. Though we are not going to be actively using it in the working group, some of the software that we use relies upon it. It doesn&rsquo;t take up much space and can be downloaded and installed <a href="https://www.python.org/downloads/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>here</a>.</p>
+<p>Alternatively, you can install python with <code>winget</code> using the following command:</p>
+<pre><code class="language-sh">winget install python
+</code></pre>
+<p>If you do use <code>winget</code> you may have to update your PATH variable manually, so the command prompt can find it (see <a href="#path" 
+  
+  
+>appendix</a> below).</p>
+<h3 id="pandoc-xnos">pandoc-xnos<a class="anchor" href="#pandoc-xnos">#</a></h3>
+<p><a href="https://github.com/tomduck/pandoc-fignos" 
+  
+   target="_blank" rel="noreferrer noopener" 
+><code>pandoc-xnos</code></a> is for cross-referencing figures, tables, equations, sections and pretty much anything else that can be written in a Markdown file. This helps for automatically handling the labelling of different parts of your document, so you can move the position of a figure or table or equations without having to change the reference to it in the body of your text. Install with:</p>
+<pre><code class="language-sh">pip install pandoc-fignos pandoc-eqnos pandoc-tablenos \
+            pandoc-secnos --user
+</code></pre>
+<p>And then use it with <code>--filter pandoc-xnos</code> as a flag for the <code>pandoc</code> command in your <code>Makefile</code> recipe. <strong>NOTE</strong>: Whenever using <code>pandoc-fignos</code> or <code>pandoc-xnos</code>, they need to be invoked before the <code>--citeproc</code> filter as they both use the @ symbol to identify references and they will get confused otherwise.</p>
+<h3 id="installing-a-text-editor">Installing a Text Editor<a class="anchor" href="#installing-a-text-editor">#</a></h3>
+<p>One of the advantages of plain text is that you can open your files on any computer with the native programs installed on it from the factory. Every computer will have a basic text editor (macOs has TextEdit and Windows has Notepad) and you could do everything we are going to do in this working group with the command line and one of these text editors (in fact you could do everything just with the command line). I <em>highly</em> recommend you install a more advanced text editor to do your work in.</p>
+<p>There are a few excellent options to choose from including Sublime Text, Emacs, Atom, Notepad++ and RStudio. I use Microsoft&rsquo;s Visual Studio Code (or VS Code for short) which is particularly good and seems to be becoming the standard. The advantage to using a text editor regardless of which specific one you choose is that they highlight the syntax of whatever programming language you are writing in (including Markdown and LaTeX) enhancing the readability of your code to help writing and debugging. What more, you can typically run everything directly in the text editor so you never need to navigate away from a single window to get all your work done. You can run <code>R</code>, <code>python</code>, and keep your \LaTeX document open all at the same time toggling between the different tasks as you need.</p>
+<p>I really think that you should use VS Code and it is what I will be using throughout the working group and so go ahead and install it <a href="https://code.visualstudio.com/download" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>here</a>. One of the nice things about VS Code is that it is <em>extensible</em> and has all sorts of extra features designed and implemented by users to help you get things done. One of the most important extensions is a LaTeX helper that we will be using when we do have to edit or write in LaTeX. After you install VS Code go ahead and install the extension <a href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>here</a>. There are also other helpful things for writing like a <a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>spell checker</a>, a tool for auto-completing <a href="https://marketplace.visualstudio.com/items?itemName=notZaki.pandocciter" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>citations</a>, a word <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.wordcount" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>counter</a>, and support for your favorite (or not so favorite) <a href="https://marketplace.visualstudio.com/items?itemName=REditorSupport.r" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>statistical software</a>. And don&rsquo;t worry, installing these extensions is just a matter of clicking a button.</p>
+<h2 id="path">Adding to PATH<a class="anchor" href="#path">#</a></h2>
+<p>A lot of the work of typesetting is going to be taking place in the terminal and sometimes you will get an annoying an inexplicable error like &ldquo;this software is not on the PATH&rdquo; or &ldquo;I can&rsquo;t find this software&rdquo;, which means that your computer is searching the location where executable programs are located (the PATH variable) but it is not finding whatever software you are telling it to run. Why this happens is a mystery. Sometimes the software has installed onto your computer, but the terminal program doesn&rsquo;t know where to look for where the programs are installed. I know this is a little confusing but here is a quick lesson. When you invoke a command on the terminal the first thing the computer does is check an index of the available software, which it does by examining what is called the PATH variable. If it finds whatever you are asking it to use like <code>pandoc</code> or LaTeX or R or python or whatever, it runs the command. If it doesn&rsquo;t find what you tell it to look for it returns an error.</p>
+<p>Before giving up completely try updating the PATH variable so the terminal knows where the software is. Depending on what specific command line or terminal you are using the instructions are slightly different but they will be pretty portable across platforms, and operating systems. This is one of those things that you really only have to learn once and then you&rsquo;ll be able to improvise a lot better later. To find out where the files for a program are on macOs, run the <code>which</code> command followed by what your looking for, such as <code>which pandoc</code>, and it will print the path to where the executables of these files are installed. Sometimes the data files for a program get installed onto our computer without the PATH variable getting updated to tell the terminal that the software is installed. Check below for relevant information about how to add to the path:</p>
+<h3 id="windows">Windows<a class="anchor" href="#windows">#</a></h3>
+<ol>
+<li>The first step depends which version of Windows you&rsquo;re using:</li>
+</ol>
+<ul>
+<li>If you&rsquo;re using Windows 8 or 10, press the Windows key, then search for and
+select &ldquo;System (Control Panel)&rdquo;.</li>
+<li>If you&rsquo;re using Windows 7, right click the &ldquo;Computer&rdquo; icon on the desktop
+and click &ldquo;Properties&rdquo;.</li>
+</ul>
+<ol start="2">
+<li>Click &ldquo;Advanced system settings&rdquo;.</li>
+<li>Click &ldquo;Environment Variables&rdquo;.</li>
+<li>Under &ldquo;System Variables&rdquo;, find the <code>PATH</code> variable, select it, and click
+&ldquo;Edit&rdquo;. If there is no <code>PATH</code> variable, click &ldquo;New&rdquo;.</li>
+<li>Add your directory to the beginning of the variable value followed by <code>;</code> (a
+semicolon). For example, if the value was <code>C:\Windows\System32</code>, change it to
+<code>C:\Users\Me\bin;C:\Windows\System32</code>.</li>
+<li>Click &ldquo;OK&rdquo;.</li>
+<li>Restart your terminal.</li>
+</ol>
+
+
+              
+                  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+              
+          </article>
+
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+    
+    
+      <a
+        class="social-icons__link"
+        title="Email"
+        href="mailto:timothyelder@uchicago.edu"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://timothyelder.com/svg/email.svg')"></div>
+      </a>
+    
+  
+    
+    
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/timothyelder"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://timothyelder.com/svg/github.svg')"></div>
+      </a>
+    
+  
+    
+    
+      <a
+        class="social-icons__link"
+        title="uchicago"
+        href="https://sociology.uchicago.edu/directory/timothy-elder"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://timothyelder.com/svg/uchicago.svg')"></div>
+      </a>
+    
+  
+</div>
+
+            <p>© 2023</p>
+          </footer>
+          </div>
+      </div>
+      
+      <div class="toc-container">
+          
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#windows-installation">Windows Installation</a>
+      <ul>
+        <li><a href="#latex-pandoc-and-git">LaTeX, <code>pandoc</code>, and <code>Git</code></a></li>
+        <li><a href="#installing-document-templates">Installing Document Templates</a></li>
+        <li><a href="#winget-package-manager"><code>winget</code> Package Manager</a></li>
+        <li><a href="#make">Make</a></li>
+        <li><a href="#python">Python</a></li>
+        <li><a href="#pandoc-xnos">pandoc-xnos</a></li>
+        <li><a href="#installing-a-text-editor">Installing a Text Editor</a></li>
+      </ul>
+    </li>
+    <li><a href="#path">Adding to PATH</a>
+      <ul>
+        <li><a href="#windows">Windows</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+      
+    </div>
+
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.301a8b0870381bf76b3b5182e8966d363a0474281183439beb024d8b8228fc66.js" integrity="sha256-MBqLCHA4G/drO1GC6JZtNjoEdCgRg0Ob6wJNi4Io/GY=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+    <script src="/js/table-of-contents.js"></script>
+  
+
+
+</body>
+
+</html>

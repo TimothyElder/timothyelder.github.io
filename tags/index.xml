@@ -6,6 +6,97 @@
     <description>Recent content in Tags on timothyelder.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© {year}</copyright><atom:link href="https://timothyelder.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Sat, 04 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://timothyelder.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>installation</title>
+      <link>https://timothyelder.com/tags/installation/</link>
+      <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyelder.com/tags/installation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LaTeX</title>
+      <link>https://timothyelder.com/tags/latex/</link>
+      <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyelder.com/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>macOs</title>
+      <link>https://timothyelder.com/tags/macos/</link>
+      <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyelder.com/tags/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pandoc</title>
+      <link>https://timothyelder.com/tags/pandoc/</link>
+      <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyelder.com/tags/pandoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>https://timothyelder.com/tags/windows/</link>
+      <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyelder.com/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>command line</title>
+      <link>https://timothyelder.com/tags/command-line/</link>
+      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyelder.com/tags/command-line/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>project organization</title>
+      <link>https://timothyelder.com/tags/project-organization/</link>
+      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyelder.com/tags/project-organization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>usage</title>
+      <link>https://timothyelder.com/tags/usage/</link>
+      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyelder.com/tags/usage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>math</title>
+      <link>https://timothyelder.com/tags/math/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyelder.com/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shortcodes</title>
+      <link>https://timothyelder.com/tags/shortcodes/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyelder.com/tags/shortcodes/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

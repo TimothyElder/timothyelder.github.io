@@ -9,12 +9,61 @@
     <copyright>© {year}</copyright>
     <lastBuildDate>Mon, 30 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://timothyelder.com/plaintext/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>macOs Install Instructions</title>
+      <link>https://timothyelder.com/plaintext/macos-install/</link>
+      <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyelder.com/plaintext/macos-install/</guid>
+      <description>Installation LaTeX, pandoc, and Git LaTeX LaTeX, typically pronounced lay-tek or lah-tex, is a program for typesetting documents developed in the late 70s. It allows you to create really pretty documents and in particular, documents that include mathematical notation, figures, and tables. It can be used to typeset pretty much anything that needs typesetting.
+LaTeX is a pretty big program (around 5GBs) so you will need sufficient space on your hard drive to accommodate it.</description>
+    </item>
+    
+    <item>
+      <title>Windows Install Instructions</title>
+      <link>https://timothyelder.com/plaintext/winods-install/</link>
+      <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyelder.com/plaintext/winods-install/</guid>
+      <description>Windows Installation First a moment for evangelism. Windows is far and away the most popular operating system in the world for desktops and laptops, with 76% of the global market share, followed by macOs (16%) and then Linux (5%). Pretty much everyone has a working familiarity with Windows, and what more it is meant to be user friendly for the average person. But Windows offers a much more What You See Is What You Get Approach to computing.</description>
+    </item>
+    
+    <item>
+      <title>The Terminal and Project Organization</title>
+      <link>https://timothyelder.com/plaintext/session-1/</link>
+      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyelder.com/plaintext/session-1/</guid>
+      <description>The Terminal Switching to a plain text workflow requires that you adjust the way you interact with your computer. Rather than pointing and clicking and navigating through different windows we will be using what is a primitive technology in computing: the Terminal. It was once the case that all interactions with a computer were done with nothing more than a keyboard, not even a mouse. Of course computing has come a long way and most of your interactions with your computer take place with a mouse, touch pad or touch screen and it can be intimidating to approach the terminal, but it is really quite easy to use and helps for you to learn where things are actually located on your computer.</description>
+    </item>
+    
+    <item>
       <title>Introduction and Overview</title>
       <link>https://timothyelder.com/plaintext/intro-and-overview/</link>
       <pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://timothyelder.com/plaintext/intro-and-overview/</guid>
       <description>Workshop Description and Objectives This working group is meant to give a short introductions to a set of plain text and open source tools for doing and writing up research. Many people have been exposed to these tools before, but the startup costs are non-negligible and we tend to fall back on the tools that are most ubiquitous rather than those that best suit our work. Unlike a traditional workshop at the University of Chicago, or a one time tutorial, we intend for this working group to allow interested students, post-docs and faculty to overcome the initial time investment and troubleshoot together to adopt a different and more appropriate set of tools for our research.</description>
+    </item>
+    
+    <item>
+      <title>Math Typesetting</title>
+      <link>https://timothyelder.com/plaintext/math-typesetting/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyelder.com/plaintext/math-typesetting/</guid>
+      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rich Content</title>
+      <link>https://timothyelder.com/plaintext/rich-text/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyelder.com/plaintext/rich-text/</guid>
+      <description>Hugo ships with several Built-in Shortcodes for rich content, along with a Privacy Config and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
+YouTube Privacy Enhanced Shortcode Twitter Simple Shortcode “In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”
+— Jan Tschichold pic.twitter.com/gcv7SrhvJb
+&amp;mdash; Graphic Design History (@DesignReviewed) January 17, 2019 Vimeo Simple Shortcode </description>
     </item>
     
   </channel>

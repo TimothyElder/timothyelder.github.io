@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 <head>
-  <title>The Terminal and Project Organization. | timothyelder.com</title>
+  <title>The Terminal and Project Organization | timothyelder.com</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
@@ -45,7 +45,7 @@
       "@context": "http://schema.org", 
       "@type": "WebSite", 
       "url": "https:\/\/timothyelder.com\/plaintext\/session-1\/",
-      "name": "The Terminal and Project Organization.",
+      "name": "The Terminal and Project Organization",
       "author": {
         "@type": "Person",
         "name": ""
@@ -103,13 +103,231 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">The Terminal and Project Organization.</h1>
-            <time datetime="2023-01-29 00:00:00 &#43;0000 UTC" class="post__date">Jan 29 2023</time> 
+            <h1 id="post__title">The Terminal and Project Organization</h1>
+            <time datetime="2023-02-03 00:00:00 &#43;0000 UTC" class="post__date">Feb 3 2023</time> 
           </header>
           <article class="post__content">
               
-<h2 id="overview">Overview<a class="anchor" href="#overview">#</a></h2>
-<p>In the first session of the PlainText Working Group we are going to be covering two critical parts of working in plain text; using your computers command line or terminal and organizing a project directory.</p>
+<h2 id="the-terminal">The Terminal<a class="anchor" href="#the-terminal">#</a></h2>
+<p>Switching to a plain text workflow requires that you adjust the way you interact with your computer. Rather than pointing and clicking and navigating through different windows we will be using what is a primitive technology in computing: the Terminal. It was once the case that all interactions with a computer were done with nothing more than a keyboard, not even a mouse. Of course computing has come a long way and most of your interactions with your computer take place with a mouse, touch pad or touch screen and it can be intimidating to approach the terminal, but it is really quite easy to use and helps for you to learn where things are actually located on your computer. This latter feature helps you to better understand the file structure that you are going to be leveraging to both organize your project and typeset documents. Here I will provide a quick tutorial on how to use the Terminal and some of the most basic and essential commands.</p>
+<figure><img src="/images/terminal.png"
+         alt="The Terminal in macOs"/><figcaption>
+            <p>The Terminal in macOs</p>
+        </figcaption>
+</figure>
+
+<p><strong>NOTE</strong>: Windows and macOs use different kinds of terminals, and even in macOs there are slightly different versions of the same terminal. This means that you will have to learn commands for your operating system. Also, they are called slightly different things. On Windows it is called &ldquo;Command Prompt&rdquo; and there is a specific program called PowerShell. Don&rsquo;t use PowerShell, use Command Prompt, sometimes referred to as CMD which can be found in the &ldquo;Accessories&rdquo; part of the Start Menu. On macOs you will find the terminal under &ldquo;Other&rdquo; in your Launchpad. Here is a table with commands across operating systems:</p>
+<table>
+<thead>
+<tr>
+<th>Windows CMD</th>
+<th>Task</th>
+<th>macOs Terminal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dir</code></td>
+<td>List files and folders</td>
+<td><code>ls</code></td>
+</tr>
+<tr>
+<td><code>cd</code></td>
+<td>Full path of current folder/directory</td>
+<td><code>pwd</code></td>
+</tr>
+<tr>
+<td><code>cd &lt;path to directory&gt;</code></td>
+<td>Change folder/directory</td>
+<td><code>cd &lt;path to directory&gt;</code></td>
+</tr>
+<tr>
+<td><code>cd ..</code></td>
+<td>One directory up in directory tree</td>
+<td><code>cd ..</code></td>
+</tr>
+<tr>
+<td><code>mkdir newFolder</code></td>
+<td>Create new directory in current directory</td>
+<td><code>mkdir myFolder</code></td>
+</tr>
+<tr>
+<td><code>rmdir myFolder</code></td>
+<td>Remove a directory*</td>
+<td><code>rmdir myFolder</code></td>
+</tr>
+<tr>
+<td><code>ren oldFolderName newFolderName</code></td>
+<td>Rename a directory</td>
+<td><code>mv oldFolderName newFolderName</code></td>
+</tr>
+<tr>
+<td><code>robocopy myFolder &lt;path to destination directory&gt;</code></td>
+<td>Copy a directory</td>
+<td><code>cp -r myFolder &lt;path to destination directory&gt;</code></td>
+</tr>
+<tr>
+<td><code>move myFolder &lt;path to destination directory&gt;</code></td>
+<td>Move a directory</td>
+<td><code>mv myFolder &lt;path to destination directory&gt;</code></td>
+</tr>
+<tr>
+<td><code>ren oldFileName newFileName</code></td>
+<td>Rename a file</td>
+<td><code>mv oldFileName newFileName</code></td>
+</tr>
+<tr>
+<td><code>copy myFile &lt;path to destination directory&gt;</code></td>
+<td>Copy a file</td>
+<td><code>cp myFile &lt;path to destination directory&gt;</code></td>
+</tr>
+<tr>
+<td><code>move myFile &lt;path to destination directory&gt;</code></td>
+<td>Move a file</td>
+<td><code>mv myFile &lt;path to destination directory&gt;</code></td>
+</tr>
+<tr>
+<td><code>cls</code></td>
+<td>Clear the terminal screen</td>
+<td><code>clear</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="a-short-tutorial">A Short Tutorial<a class="anchor" href="#a-short-tutorial">#</a></h3>
+<p>First some vernacular for you to be familiar with: when working in the terminal you will be dealing with Files and Directories. A directory is what is otherwise called a &ldquo;folder&rdquo;, a container for files. A file is the basic unit for holding data in your computer. A file is the thing that you typically open with your cursor (like a text file, Word document or an image file) by double clicking on it. We will be dealing with programs on the terminal but not in the way you have done before. We will get there eventually, but just remember files go in directories and directories can themselves have sub-directories with files in them. This is the hierarchical folder structure that is typical of computing systems.</p>
+<p>With the terminal open go ahead and type in <code>ls</code> and hit <code>Enter</code>. In macOs you should see something like this print out:</p>
+<pre><code class="language-sh">(base) MacBook-Pro:~ timothyelder$ ls
+Applications
+Desktop
+Documents
+Downloads
+Library
+Movies
+Music
+Pictures
+Public
+</code></pre>
+<p>The <code>ls</code> command in macOs lists the contents of the current directory you are in. To determine which directory you are in type in <code>pwd</code> and hit <code>Enter</code>.</p>
+<pre><code class="language-sh">(base) MacBook-Pro:~ timothyelder$ pwd
+/Users/timothyelder
+</code></pre>
+<p><code>pwd</code> stands for &ldquo;present working directory&rdquo; and prints out the path to the directory you are in. The &ldquo;working directory&rdquo; just means whatever directory your terminal is open in. On macOs, whenever you open a terminal it automatically opens in what is known as your &ldquo;Home&rdquo; directory which has the files that appear on your Desktop, in your Documents directory and other directories associated with Videos, Music, etc. etc.. A path is the generic way of referring to the address of a directory or file on your computer. Let&rsquo;s start to navigate your computer and manipulate directories and files from the terminal.</p>
+<p>The way to navigate to another directory from your working directory is to use the <code>cd</code> (or the &ldquo;change directory&rdquo;) command and specify which other directory you want to change to. Let&rsquo;s change to the Documents directory by typing in <code>cd /Users/timothyelder/Documents</code>. This is the path <em>for me</em>, as my user name on my machine is &ldquo;timothyelder&rdquo;, so you&rsquo;ll have to use <em>your</em> username or whatever is in the path when you use the <code>pwd</code> command. After using the <code>cd</code> command to get to the Documents directory let&rsquo;s create a sub-directory there to store the files related to the Working Group. To do this you will use the <code>mkdir</code> or make directory command. Type <code>mkdir plaintext</code> into the terminal and hit <code>Enter</code>. Check to see that the new directory has been made by typing in <code>ls</code> again and see that the directory has been made.</p>
+<p>Now, when using the <code>cd</code> command (or any other command that takes in a path as an argument) you can use either <em>absolute</em> or <em>relative</em> paths to specify where you want to go or what file/directory you are specifying. An absolute path uses the full amount of information to describe the address of he file or directory you are referring to, such as <code>/Users/timothyelder/Documents/plaintext</code>. That is the absolute path of the <code>plaintext</code> directory. Using the absolute path makes everything explicit, but takes up a lot of time when you have to type it in over and over again into the terminal. To save yourself time you can use a relative path which is relative to wherever your terminal is open on your computer. For instance, if you did the last set of instructions correctly, you created a directory called <code>plaintext</code> in the <code>Documents</code> directory and we noted the absolute path above. The <code>plaintext</code> directory is immediately accessible to the <code>Documents</code> directory because the former is a sub-directory of the latter, so simply typing in <code>cd plaintext</code> will move your terminal into the <code>plaintext</code> directory.</p>
+<p>So go ahead and <code>cd</code> into that new directory and type <code>ls</code> again. As you&rsquo;ll see, nothing is printed out from the list command because it is a brand new directory with no files or subdirectories. Next thing to do is to create an example text file. To do this we are going to use a builtin text editor to create a new file using the <code>vim</code> command. <code>vim</code> is an ancient text editor that is pretty much built into all machines that are based on UNIX which includes macOs and Linux (sorry Windows users). Into the terminal type <code>vi my_text_file.txt</code>. The command <code>vim</code> is used to open a text editor in your terminal and you have just used it to open a file called <code>my_text_file.txt</code>, and because the file doesn&rsquo;t yet exist, you are creating it at the same time. This can be very confusing because it looks like an empty terminal window, as can be see below.</p>
+<figure><img src="/images/vi_empty.png"
+         alt="An instance of vim open in a Terminal."/><figcaption>
+            <p>An instance of <code>vim</code> open in a Terminal.</p>
+        </figcaption>
+</figure>
+
+<p>The terminal is now open in an empty text file, and that is why it is empty and right now if you start tapping away at your keyboard nothing will happen, which is also pretty mysterious behavior. To edit the file and add content you need to press the <code>i</code> key on your keyboard. This activates &ldquo;insert&rdquo; mode in the <code>vim</code> text editor meaning you can actually type in the window and put content into the file. This will look like the below figure. Type in &ldquo;Hello World!&rdquo; then hit the <code>esc</code> or escape key on your keyboard and you will exit the insert mode, then type in <code>:wq</code> (that is hit <code>Shift</code> - <code>;</code> and then type <code>wq</code>). Typing in <code>wq</code> means &ldquo;write-quit&rdquo; which is &ldquo;write the file contents to memory and exit the editor&rdquo;. To exit without saving use <code>:q!</code> instead of <code>:wq</code>. Once back to the normal terminal type in <code>ls</code> to check that the file is there, and then type in <code>cat my_text_file.txt</code> and the file contents will print out. The <code>cat</code> command (besides being a cute reminder of our Feline friends) stands for &ldquo;concatenate and print file contents&rdquo; and allows you inspect plain text files from the command line.</p>
+<figure><img src="/images/vi_insert.png"
+         alt="vim in &amp;lsquo;insert&amp;rsquo; mode."/><figcaption>
+            <p><code>vim</code> in &lsquo;insert&rsquo; mode.</p>
+        </figcaption>
+</figure>
+
+<p>Though we are not going to be using <code>vim</code> extensively it is good to know how to use it, particularly considering how disorienting it can be when a program pops you into a <code>vim</code> terminal and you&rsquo;ve never seen one before. All digital writing use to be conducted in things like <code>vim</code>, and other text editors, which refers to a class of programs that allow the user to create and edit plain text data. You can do could do nearly everything we are going to do in the working group with <code>vim</code> or an equivalent terminal based text editor. You could write a whole book in it if you wanted, or the documentation that you are looking at now (see the next figure).</p>
+<figure><img src="/images/vi_document.png"
+         alt="A long document with lots of stylized text in vim."/><figcaption>
+            <p>A long document with lots of stylized text in <code>vim</code>.</p>
+        </figcaption>
+</figure>
+
+<p>Lastly, the terminal lets us take a look at <em>hidden</em> files in a directory. Do the exact same thing as you did above (where you created a text file called <code>my_text_file.txt</code> with &ldquo;Hello World!&rdquo; inside it) but this time when you first type in the <code>vim</code> command, instead of <code>my_text_file.txt</code>, type <code>.hidden_file</code>. Make the file contents the &ldquo;Hello World!&rdquo; phrase, same as before and write quit out of the file. Back at the normal terminal type <code>ls</code> again to make sure the file you just created is there. Curiously, you will not see a file called <code>.hidden_file</code> but the <code>my_text_file.txt</code> will be there! You can even check in a normal Finder window or File Explorer and the file will not be there.</p>
+<pre><code class="language-sh">(base) MacBook-Pro:plaintext timothyelder$ ls
+my_text_file.txt
+</code></pre>
+<p>This is because files that begin with a period are hidden and do not appear without using a special <em>flag</em> or <em>option</em> for the <code>ls</code> command. Typing in <code>ls -a</code> will printout <em>all</em> the files in the directory, even hidden ones.</p>
+<pre><code class="language-sh">(base) MacBook-Pro:plaintext timothyelder$ ls -a
+.			.hidden_file
+..		 my_text_file.txt
+</code></pre>
+<p>There is nothing special about any given directory that you can navigate to on your computer. They are all generic containers that store generic files and so you can take what you have applied here and move up and down the directory tree, listing out the files and creating files as you please.</p>
+<h3 id="a-few-helpful-hints-and-a-warning">A Few Helpful Hints and A Warning<a class="anchor" href="#a-few-helpful-hints-and-a-warning">#</a></h3>
+<p>When using the terminal if you ever need help with a command you can look up what&rsquo;s called a <code>man</code> page, or manual page simply by typing in <code>man &lt;command of interest&gt;</code>.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> So if you want to read about everything the <code>ls</code> or <code>cd</code> commands can do simply type in <code>man ls</code> or <code>man cd</code> and the terminal prints out information that you can navigate through with the directional keys. If you need to exit a <code>man</code> page hit the <code>q</code> key on your keyboard.</p>
+<p>Also, for the <code>cd</code> command you navigate into the directory that contains whatever directory you are in by typing in <code>cd ..</code>. For example, above we created a sub-directory called <code>plaintext</code> in our <code>Documents</code> directory with two file in it. If you were in the <code>plaintext</code> directory and typed <code>cd ..</code> that would take you one level up to the <code>Documents</code> directory. Doing the <code>cd ..</code> command one more time takes you up another level into your home directory where we started out.</p>
+<p>Lastly, the terminal is intimidating but hopefully some of its mystery has been resolved now that you can navigate around it list files out and make them all from the terminal. <em>But</em>, the terminal was made by computer scientists and engineers who were very technically capable and knew what they were doing, so when they typed in a command they knew what it meant and what it would do. Sometimes we can get ourselves into trouble on the terminal because we are not computer scientists and engineers and we don&rsquo;t always know what we are doing. For example, the <code>rm</code> and <code>del</code> commands (in macOs and Windows respectively) delete files, and when you run them they don&rsquo;t ask you to confirm that you really want to delete the file <code>only_copy_of_my_thesis_do_not_delete_no_backups.tex</code> and it doesn&rsquo;t go to the Trash folder for you to restore it later. It just gets <a href="https://www.reddit.com/r/funny/comments/8ell2r/college_student_has_a_mental_breakdown_after/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>deleted</a>. So use caution on the terminal but for the most part you can&rsquo;t get into too much trouble.</p>
+<h2 id="project-organization">Project Organization<a class="anchor" href="#project-organization">#</a></h2>
+<p>Working with the terminal requires and instructs you on the file structure of your computer, knowledge of which is important for keeping things organized while you do your research and writing. Project organization refers to two separate, and sometimes competing tasks: one is organizing the material you need to learn about the world in a way that is conceptually coherent and helpful to you. The second task is organizing actual computer files in such a way that they are accessible to you and to the software you are working with. These are distinct tasks and sometimes they compete with one another, as the first is meant to help you think better and the second is meant to help you do things faster. For example, it makes sense to keep distinct <em>activities</em> related to your research into different directories (sort of like keeping one notebook of notes for one class, and another notebook for another class). But depending on what your definition of an activity is, could mean that the number of directories proliferates and becomes unmanageable. You could just have one directory that has all the files for your project in a horizontal structure, which makes remembering the paths to each file pretty simple (it would just be <code>/Users/timothyelder/Documents/project-dir/FILENAMEHERE.txt</code>). That makes everything accessible but pretty hard to navigate.</p>
+<p>Finding a healthy compromise between the conceptual ordering of research material and the organization of computer files will be a matter of personal preference. With that said I have a few principles that I find helpful:</p>
+<h4 id="each-project-should-have-its-own-directory">Each project should have its own directory</h4>
+<p>A project can be as small as a side-project that goes nowhere, to your dissertation to your <em>magnum opus</em>.</p>
+<h4 id="each-area-of-a-project-should-have-its-own-sub-directory">Each Area of a Project should have its own Sub-Directory</h4>
+<p>Again what constitutes an &ldquo;Area&rdquo; is ambiguous and you have to use your own judgement and the final rule of thumb is if you are making progress and getting things done. With that said I usually end up having the same directories at the top of my project directory. These include the following:</p>
+<pre><code class="language-sh">timothyelder@MacBook-Pro project-dir % ls
+README.md
+research_log.md
+analysis
+data
+drafts
+figures
+memos
+misc
+scripts
+</code></pre>
+<p>The two files at the top of this list are what are called Markdown files (which we will cover soon). The <code>README.md</code> file includes an explanation of what the project is and what it includes, and any required software while the <code>research_log.md</code> includes entries about what is going on in the project and my laments about the world and my own research. The rest are sub-directories that contain different parts of the project. In the <code>data</code> directory naturally is all my data (both quantitative and qualitative), while the <code>drafts</code> directory has all the drafts for the different formal pieces of writing coming from the project. Informal pieces of writing that are likely only to be seen by myself, my advisors, or collaborators are stored in the <code>memos</code> directory. <code>figures</code> includes all the images that are generated from the data or that might be included in papers etc.. Whether the project is purely qualitative or not, I inevitably write some scripts in R, python or shell and they go in the <code>scripts</code> folder and <code>misc</code> is a garbage can of all the things I don&rsquo;t need now but am not confident I will never need again.</p>
+<h4 id="hierarchical-is-better-than-horizontal">Hierarchical is Better than Horizontal</h4>
+<p>This goes hand in hand with the first two points but I want to emphasize that creating directories and subdirectories is helpful for keeping everything organized and that nesting directories is particularly helpful as it allows for more and more fine grained conceptual categorizations.</p>
+<h4 id="literal-is-better-than-symbolic">Literal is Better than Symbolic</h4>
+<blockquote>
+<p>There are only two hard things in Computer Science: cache invalidation and naming things.</p>
+<p>&mdash; Phil Karlton</p>
+</blockquote>
+<p>When you are naming directories and files, it is always best to make things explicit. If the directory holds data call it <code>data</code>, the directory contains images of documents from the Florida Office of Insurance Regulation in Tallahassee, call the directory <code>images_florida_insurance_regulation</code>. If the file is your dissertation latex file call it <code>dissertation.tex</code>. Choosing symbolic names, or anything cryptic makes parsing files difficult particularly if you take a break from a project for a few weeks and need to get back to it.</p>
+<p><strong>IMPORTANT NOTE:</strong> It is really important that when you are naming things, including files and directories, that you don&rsquo;t use spaces or slashes in the names. This is because spaces and other characters like slashes are read by your computer as meaningful to how it reads different files. If you use them then errors will be raised and things won&rsquo;t work.</p>
+<h3 id="summary">Summary<a class="anchor" href="#summary">#</a></h3>
+<p>The wisdom then for organizing a directory in a way that successfully achieves the two different goals of organization (conceptual clarity and organizational productivity) can be condensed into:</p>
+<ol>
+<li>Project in Every Directory and a Directory for Every Project</li>
+<li>A Sub-Directory for every Area of a Project</li>
+<li>Hierarchical is better than horizontal organization</li>
+<li>Literal names are always favored over cryptic or symbolic names</li>
+</ol>
+<p>This is an area that is going to be much more dependent on your particular disposition to doing work, but at a certain point you will run up against the need to typeset documents and keep conceptually distinct areas actually digitally distinct, so if you don&rsquo;t buy into my dogma that is fine, but adopt some other regular process of your own and stick to it as you do your work.</p>
+<h3 id="some-examples">Some Examples<a class="anchor" href="#some-examples">#</a></h3>
+<p>Here are some examples that exemplify and defy the paradigm I articulated above. All of these are examples from my own computer and time in graduate school. The below figure is the directory that contains all the files for my Qualifying Paper, my first independently researched and written paper from graduate school. You will note two things: I was doing all my writing with Word and didn&rsquo;t abide by my rules about keeping different directories for different areas of the project. I do this a little bit having a <code>drafts</code> directory but I am not certain what the <code>Print</code> and <code>Material</code> directories are and the <code>Writing Seminar Submission</code> directory should probably be in <code>drafts</code>.</p>
+<figure><img src="/images/pretty_bad_directory.png"
+         alt="A pretty poorly organized directory."/><figcaption>
+            <p>A pretty poorly organized directory.</p>
+        </figcaption>
+</figure>
+
+<p>Clearly, I was not being very thoughtful when it comes to how I organized my work, but this is a lot better than the directory in the figure below. This is a directory for class prep for a sociology course I helped to design along with Profs. Jenny Trinitapoli and John Levi Martin. It is a complete mess with obscure directory names and files that are all at the top of the directory without much organization at all. Files are misspelled and there is a particularly egregious organizational error. I have two files that are indistinguishable in their name except for the suffix &ldquo;.v2&rdquo; being included in the file name. A short anecdote will heighten the importance of the naming conventions I articulate here.</p>
+<figure><img src="/images/really_bad_directory.png"
+         alt="A really quite poorly organized directory"/><figcaption>
+            <p>A really quite poorly organized directory</p>
+        </figcaption>
+</figure>
+
+<p>I have a colleague who has had a paper under review for a couple of years now due to a variety of factors related to the pandemic. On the second R&amp;R, after months of working on other projects and getting ready for job talks, he went back to the project files to address the concerns of a particularly scrupulous Reviewer #3. The reviewer was asking that they re-run some analyses with a different method and so my colleague needed to go back and figure out how a few figures were generated and how the original analyses were specifically conducted. Opening the directory with his code he had endless files all with nearly indistinguishable names like:</p>
+<pre><code class="language-s">pol_gss_multiimput.R 
+pol_gss_multiimput_v2.R 
+pol_gss_multiimput_v2_1.R 
+pol_gss_multiimput_v2_2.R 
+pol_gss_multiimput_v2_2_THIS_ONE.R 
+pol_gss_multiimput_v2_2_No_REally_THIS_ONE.R 
+pol_gss_multiimput_v2_2_No_REally_THIS_ONE_final.R
+</code></pre>
+<p>He spent weeks and lots of tireless hours figuring out what was what. Instead of being like my friend, be more like me and do something like you see in the figure below. This is a directory for a project that I am working on that includes lots of different scripts and data. Code for processing the data is kept separate from code for doing analyses and files are given explicit and non-redundant names. Certainly, this takes some amount of effort and energy to do and my project directories don&rsquo;t always look like this while working on them, but it is worth cultivating good habits like this to do your research and writing. You will thank yourself later if you are ever in the same position as my poor sweet friend being harassed by pesky Reviewer #3.</p>
+<figure><img src="/images/soc_of_soc_code_dir.png"
+         alt="A quite well organized directory"/><figcaption>
+            <p>A quite well organized directory</p>
+        </figcaption>
+</figure>
+
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><strong>Windows Users</strong>: Use <code>help</code> instead of <code>man</code>.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
 
 
               
@@ -183,7 +401,19 @@
           
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#overview">Overview</a></li>
+    <li><a href="#the-terminal">The Terminal</a>
+      <ul>
+        <li><a href="#a-short-tutorial">A Short Tutorial</a></li>
+        <li><a href="#a-few-helpful-hints-and-a-warning">A Few Helpful Hints and A Warning</a></li>
+      </ul>
+    </li>
+    <li><a href="#project-organization">Project Organization</a>
+      <ul>
+        <li></li>
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#some-examples">Some Examples</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
       </div>
