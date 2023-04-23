@@ -46,6 +46,27 @@ LaTeX is a pretty big program (around 5GBs) so you will need sufficient space on
     </item>
     
     <item>
+      <title>Math Typesetting</title>
+      <link>https://timothyelder.com/plaintext/math-typesetting/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyelder.com/plaintext/math-typesetting/</guid>
+      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rich Content</title>
+      <link>https://timothyelder.com/plaintext/rich-text/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://timothyelder.com/plaintext/rich-text/</guid>
+      <description>Hugo ships with several Built-in Shortcodes for rich content, along with a Privacy Config and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
+YouTube Privacy Enhanced Shortcode Twitter Simple Shortcode “In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”
+— Jan Tschichold pic.twitter.com/gcv7SrhvJb
+&amp;mdash; Graphic Design History (@DesignReviewed) January 17, 2019 Vimeo Simple Shortcode </description>
+    </item>
+    
+    <item>
       <title>About Me</title>
       <link>https://timothyelder.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
