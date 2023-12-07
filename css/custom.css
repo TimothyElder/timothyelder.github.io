@@ -1,8 +1,0 @@
-img {
-    max-width: 120%; /* allows image to extend beyond container */
-    width: 120%; /* sets the width to be larger than the container */
-    height: auto; /* maintains the aspect ratio */
-    position: relative; /* to position the image correctly */
-    left: 50%; /* centers the image */
-    transform: translateX(-50%); /* aligns image center to container center */
-}
