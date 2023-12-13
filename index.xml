@@ -7,16 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Thu, 30 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://timothyelder.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Introduction and Overview to PlainText for Research and Writing</title>
-      <link>https://timothyelder.com/plaintext/intro-and-overview/</link>
-      <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://timothyelder.com/plaintext/intro-and-overview/</guid>
-      <description>Workshop Description and Objectives This working group is meant to give a short introductions to a set of plain text and open source tools for doing and writing up research. Many people have been exposed to these tools before, but the startup costs are non-negligible and we tend to fall back on the tools that are most ubiquitous rather than those that best suit our work. Unlike a traditional workshop at the University of Chicago, or a one time tutorial, we intend for this working group to allow interested students, post-docs and faculty to overcome the initial time investment and troubleshoot together to adopt a different and more appropriate set of tools for our research.</description>
-    </item>
-    
+    <lastBuildDate>Fri, 03 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://timothyelder.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Document Composition with LaTeX, Markdown, and pandoc</title>
       <link>https://timothyelder.com/plaintext/session-2/</link>
