@@ -13,11 +13,11 @@
   gtag('config', 'G-2W4NMV43RZ');
 </script>
   
-  <title>macOs Install Instructions | timothyelder.com</title>
+  <title>macOS Install Instructions | timothyelder.com</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
-  <meta name="description" content="How to Install the Software on macOs">
+  <meta name="description" content="How to Install the Software on macOS">
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -56,12 +56,12 @@
       "@context": "http://schema.org", 
       "@type": "WebSite", 
       "url": "https:\/\/timothyelder.com\/plaintext\/macos-install\/",
-      "name": "macOs Install Instructions",
+      "name": "macOS Install Instructions",
       "author": {
         "@type": "Person",
         "name": ""
       },
-      "description": "How to Install the Software on macOs"
+      "description": "How to Install the Software on macOS"
     }
   
   </script>
@@ -114,15 +114,14 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">macOs Install Instructions</h1>
+            <h1 id="post__title">macOS Install Instructions</h1>
             <time datetime="2023-02-04 00:00:00 &#43;0000 UTC" class="post__date">Feb 4 2023</time> 
           </header>
           <article class="post__content">
               
 <h2 id="installation">Installation<a class="anchor" href="#installation">#</a></h2>
-<h3 id="latex-pandoc-and-git">LaTeX, <code>pandoc</code>, and <code>Git</code><a class="anchor" href="#latex-pandoc-and-git">#</a></h3>
 <h4 id="latex">LaTeX</h4>
-<p>LaTeX, typically pronounced <em>lay</em>-tek or <em>lah</em>-tex, is a program for typesetting documents developed in the late 70s. It allows you to create really pretty documents and in particular, documents that include mathematical notation, figures, and tables. It can be used to typeset pretty much anything that needs typesetting.</p>
+<p>$LaTeX$, typically pronounced <em>lay</em>-tek or <em>lah</em>-tex, is a program for typesetting documents developed in the late 70s. It allows you to create really pretty documents and in particular, documents that include mathematical notation, figures, and tables. It can be used to typeset pretty much anything that needs typesetting.</p>
 <p>LaTeX is a pretty big program (around 5GBs) so you will need sufficient space on your hard drive to accommodate it. Depending on your system you will need to navigate to the <a href="https://www.latex-project.org/get/#tex-distributions" 
   
    target="_blank" rel="noreferrer noopener" 
@@ -154,31 +153,29 @@
 <p>The first set of templates is in a repository called <a href="https://github.com/TimothyElder/pandoc-templates" 
   
    target="_blank" rel="noreferrer noopener" 
->pandoc-templates</a> and includes the templates that take in our markdown files and convert them into LaTeX files. The second is a set of document class and style files that include all the details for how the software will typeset our documents with LaTeX. These can be found in the repository <a href="https://github.com/TimothyElder/latex-custom-kjh" 
+>pandoc-templates</a> and includes the templates that take in our markdown files and convert them into LaTeX files. The second is a set of document class and style files that include all the details for how the software will typeset our documents with LaTeX. These can be found in the repository <a href="https://github.com/TimothyElder/latex-custom-te" 
   
    target="_blank" rel="noreferrer noopener" 
->latex-custom-kjh</a>. Finally, we will also install a template directory, <a href="https://github.com/TimothyElder/md-starter" 
+>latex-custom-te</a>. Finally, we will also install a template directory, <a href="https://github.com/TimothyElder/md-starter" 
   
    target="_blank" rel="noreferrer noopener" 
 >md-starter</a>, which includes template markdown and <code>Make</code> files which you can use for pretty much any document. Don&rsquo;t worry about what these are yet, we will cover that shortly when we start using them.</p>
 <p>Ensure that that the software you need is installed by running the following code in a terminal:</p>
 <pre><code class="language-sh">pandoc --version
-
 latex --version
-
 git --version
 </code></pre>
-<p>Each of these commands, if the software is installed, will print out version information. If you the software is not installed then your terminal will say something like <code>python: command not found</code> or <code>latex: command not found</code> which means something has gone wrong and you will have to attempt to install the software again. <em><strong>NOTE</strong></em>: Go to the appendix below for learning out how to add to your PATH variable which could solve your problem for you.</p>
-<p>You need to make sure that you create a directory and a sub-directory the custom LaTeX templates, class and style files. Run the following code (changing the paths for your machine):</p>
-<pre><code class="language-sh">mkdir /Users/timothyelder/Library/texmf &amp;&amp; mkdir /Users/timothyelder/Library/texmf/tex/ &amp;&amp; mkdir /Users/timothyelder/Library/texmf/tex/latex
+<p>Each of these commands, if the software is installed, will print out version information. If the software is not installed then your terminal will say something like <code>python: command not found</code> or <code>latex: command not found</code> which means something has gone wrong and you will have to attempt to install the software again. <em><strong>NOTE</strong></em>: Go to the appendix below for learning out how to add to your PATH variable which could solve your problem for you.</p>
+<p>You need to make sure that you create a directory and a subdirectory the custom LaTeX templates, class and style files. Run the following code (changing the paths for your machine):</p>
+<pre><code class="language-sh">mkdir -p ~/Library/texmf/tex/latex
 </code></pre>
 <p>This creates a directory where you install the custom class and style files for LaTeX. With those directories made you can install the templates into their proper locations with the following code (again, make sure you change the paths for your machine):</p>
-<pre><code class="language-sh">cd /Users/timothyelder
-git clone https://github.com/timothyelder/pandoc-templates/
+<pre><code class="language-sh">cd ~
+git clone https://github.com/TimothyElder/pandoc-templates/
 mv pandoc-templates .pandoc
 
-cd /Users/timothyelder/Library/texmf/tex/latex
-git clone https://github.com/TimothyElder/latex-custom-kjh/
+cd ~/Library/texmf/tex/latex
+git clone https://github.com/TimothyElder/latex-custom-te/
 
 </code></pre>
 <p>If you did everything above right, Congratulations! You are one step closer to making beautiful and reproducible documents in plain text. The template and style files we installed will handle typesetting our documents so they appear the way we want, but there are a few other features of academic papers that we might want to include that requires two more pieces of software.</p>
@@ -188,13 +185,13 @@ git clone https://github.com/TimothyElder/latex-custom-kjh/
   
    target="_blank" rel="noreferrer noopener" 
 ><code>pandoc-xnos</code></a> is for cross-referencing figures, tables, equations, sections and pretty much anything else that can be written in a Markdown file. This helps for automatically handling the labelling of different parts of your document, so you can move the position of a figure or table or equations without having to change the reference to it in the body of your text. Install with:</p>
-<pre><code class="language-sh">pip install pandoc-fignos pandoc-eqnos pandoc-tablenos \
+<pre><code class="language-sh">pip3 install pandoc-fignos pandoc-eqnos pandoc-tablenos \
             pandoc-secnos --user
 </code></pre>
 <p>And then use it with <code>--filter pandoc-xnos</code> as a flag for the <code>pandoc</code> command in your <code>Makefile</code> recipe. <strong>NOTE</strong>: Whenever using <code>pandoc-xnos</code>, they need to be invoked before the <code>--citeproc</code> filter as they both use the @ symbol to identify references and they will get confused otherwise.</p>
 <h3 id="visual-studio-code">Visual Studio Code<a class="anchor" href="#visual-studio-code">#</a></h3>
-<p>One of the advantages of plain text is that you can open your files on any computer with the native programs installed on it from the factory. Every computer will have a basic text editor (macOs has TextEdit and Windows has Notepad) and you could do everything we are going to do in this working group with the command line and one of these text editors (in fact you could do everything just with the command line). I <em>highly</em> recommend you install a more advanced text editor to do your work in.</p>
-<p>There are a few excellent options to choose from including Sublime Text, Emacs, Atom, Notepad++ and RStudio. By far the best, and the one I use is Microsoft&rsquo;s Visual Studio Code (or VS Code for short). The advantage to using a text editor regardless of which specific one you choose is that they highlight the syntax of whatever programming language you are writing in (including Markdown and LaTeX) enhancing the readability of your code to help writing and debugging. What more, you can typically run everything directly in the text editor so you never need to navigate away from a single window to get all your work done. You can run <code>R</code>, <code>python</code>, and keep your LaTeX document open all at the same time toggling between the different tasks as you need.</p>
+<p>One of the advantages of plain text is that you can open your files on any computer with the native programs installed on it from the factory. Every computer will have a basic text editor (macOS has TextEdit and Windows has Notepad) and you could do everything we are going to do in this working group with the command line and one of these text editors (in fact you could do everything just with the command line). I <em>highly</em> recommend you install a more advanced text editor to do your work in.</p>
+<p>There are a few excellent options to choose from including Sublime Text, Emacs, Notepad++ and RStudio. By far the best, and the one I use is Microsoft&rsquo;s Visual Studio Code (or VS Code for short). The advantage to using a text editor regardless of which specific one you choose is that they highlight the syntax of whatever programming language you are writing in (including Markdown and LaTeX) enhancing the readability of your code to help writing and debugging. What more, you can typically run everything directly in the text editor so you never need to navigate away from a single window to get all your work done. You can run <code>R</code>, <code>python</code>, and keep your LaTeX document open all at the same time toggling between the different tasks as you need.</p>
 <p>You should install VS Code as it is what I will be using to demonstrate how to use these plain text tools. You can install it from <a href="https://code.visualstudio.com/download" 
   
    target="_blank" rel="noreferrer noopener" 
@@ -221,8 +218,8 @@ git clone https://github.com/TimothyElder/latex-custom-kjh/
 <p>Congratulations! You have actually just done a lot of the work of getting started using plain text for your research and writing. This is an onerous task and you should be commended for your effort. If you have managed to get this far then you are likely somewhat invested in adopting the plain text paradigm but if this effort has inspired skepticism or reticence about diving deeper I think it is important to note that installing the software is something that you only have to do once on any given computer. So you won&rsquo;t have to endlessly tinker with things. Once these tools are installed they are very dependable.</p>
 <h2 id="adding-to-path">Adding to PATH<a class="anchor" href="#adding-to-path">#</a></h2>
 <p>A lot of the work of typesetting is going to be taking place in the terminal and sometimes you will get an annoying an inexplicable error like &ldquo;this software is not on the PATH&rdquo; or &ldquo;I can&rsquo;t find this software&rdquo;, which means that your computer is searching the location where executable programs are located (the PATH variable) but it is not finding whatever software you are telling it to run. Why this happens is a mystery. Sometimes the software has installed onto your computer, but the terminal program doesn&rsquo;t know where to look for where the programs are installed. I know this is a little confusing but here is a quick lesson. When you invoke a command on the terminal the first thing the computer does is check an index of the available software, which it does by examining what is called the PATH variable. If it finds whatever you are asking it to use like <code>pandoc</code> or LaTeX or R or python or whatever, it runs the command. If it doesn&rsquo;t find what you tell it to look for it returns an error.</p>
-<p>Before giving up completely try updating the PATH variable so the terminal knows where the software is. Depending on what specific command line or terminal you are using the instructions are slightly different but they will be pretty portable across platforms, and operating systems. This is one of those things that you really only have to learn once and then you&rsquo;ll be able to improvise a lot better later. To find out where the files for a program are on macOs, run the <code>which</code> command followed by what your looking for, such as <code>which pandoc</code>, and it will print the path to where the executables of these files are installed. Sometimes the data files for a program get installed onto our computer without the PATH variable getting updated to tell the terminal that the software is installed.</p>
-<p>There are two different kinds of terminals on macOs. Run this line of code in your terminal and it will tell you which terminal you are using: <code>echo $0</code>. Check below for relevant information about how to add to the path:</p>
+<p>Before giving up completely try updating the PATH variable so the terminal knows where the software is. Depending on what specific command line or terminal you are using the instructions are slightly different but they will be pretty portable across platforms, and operating systems. This is one of those things that you really only have to learn once and then you&rsquo;ll be able to improvise a lot better later. To find out where the files for a program are on macOS, run the <code>which</code> command followed by what your looking for, such as <code>which pandoc</code>, and it will print the path to where the executables of these files are installed. Sometimes the data files for a program get installed onto our computer without the PATH variable getting updated to tell the terminal that the software is installed.</p>
+<p>There are two different kinds of terminals on macOS. Run this line of code in your terminal and it will tell you which terminal you are using: <code>echo $0</code>. Check below for relevant information about how to add to the path:</p>
 <h4 id="zsh"><code>zsh</code></h4>
 <p>To add a directory to your path in zsh:</p>
 <ol>
@@ -326,7 +323,7 @@ git clone https://github.com/TimothyElder/latex-custom-kjh/
   <ul>
     <li><a href="#installation">Installation</a>
       <ul>
-        <li><a href="#latex-pandoc-and-git">LaTeX, <code>pandoc</code>, and <code>Git</code></a></li>
+        <li></li>
         <li><a href="#installing-document-templates">Installing Document Templates</a></li>
         <li><a href="#pandoc-xnos">pandoc-xnos</a></li>
         <li><a href="#visual-studio-code">Visual Studio Code</a></li>

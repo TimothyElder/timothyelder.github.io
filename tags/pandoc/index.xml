@@ -9,12 +9,12 @@
     <copyright>© {year}</copyright>
     <lastBuildDate>Sat, 04 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://timothyelder.com/tags/pandoc/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>macOs Install Instructions</title>
+      <title>macOS Install Instructions</title>
       <link>https://timothyelder.com/plaintext/macos-install/</link>
       <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://timothyelder.com/plaintext/macos-install/</guid>
-      <description>Installation LaTeX, pandoc, and Git LaTeX LaTeX, typically pronounced lay-tek or lah-tex, is a program for typesetting documents developed in the late 70s. It allows you to create really pretty documents and in particular, documents that include mathematical notation, figures, and tables. It can be used to typeset pretty much anything that needs typesetting.
+      <description>Installation LaTeX $LaTeX$, typically pronounced lay-tek or lah-tex, is a program for typesetting documents developed in the late 70s. It allows you to create really pretty documents and in particular, documents that include mathematical notation, figures, and tables. It can be used to typeset pretty much anything that needs typesetting.
 LaTeX is a pretty big program (around 5GBs) so you will need sufficient space on your hard drive to accommodate it.</description>
     </item>
     
@@ -24,7 +24,7 @@ LaTeX is a pretty big program (around 5GBs) so you will need sufficient space on
       <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://timothyelder.com/plaintext/winods-install/</guid>
-      <description>Windows Installation First a moment for evangelism. Windows is far and away the most popular operating system in the world for desktops and laptops, with 76% of the global market share, followed by macOs (16%) and then Linux (5%). Pretty much everyone has a working familiarity with Windows, and what more it is meant to be user friendly for the average person. But Windows offers a much more What You See Is What You Get Approach to computing.</description>
+      <description>Windows Installation First a moment for evangelism. Windows is far and away the most popular operating system in the world for desktops and laptops, with 76% of the global market share, followed by macOS (16%) and then Linux (5%). Pretty much everyone has a working familiarity with Windows, and what more it is meant to be user-friendly for the average person. But Windows offers a much more What You See Is What You Get Approach to computing.</description>
     </item>
     
   </channel>
