@@ -7,42 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Fri, 03 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://timothyelder.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://timothyelder.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Document Composition with LaTeX, Markdown, and pandoc</title>
-      <link>https://timothyelder.com/plaintext/session-2/</link>
-      <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
+      <title>Chicago</title>
+      <link>https://timothyelder.com/photo-projects/chicago-photos/</link>
+      <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://timothyelder.com/plaintext/session-2/</guid>
-      <description>Using LaTeX, Markdown, pandoc Now that you are familiar with the Terminal you are ready to begin addressing the core competencies of the PlainText Working Group. The essential workflow that we are adopting here is writing in Markdown, a simple markup format with a few extra bells and whistles, and then using the pandoc program to convert these into HTML, PDF, Word, and LaTeX files. We will not be, strictly speaking, working or writing in LaTeX, but using LaTeX templates and the underlying software to typeset our documents.</description>
-    </item>
-    
-    <item>
-      <title>macOS Install Instructions</title>
-      <link>https://timothyelder.com/plaintext/macos-install/</link>
-      <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://timothyelder.com/plaintext/macos-install/</guid>
-      <description>Installation LaTeX $LaTeX$, typically pronounced lay-tek or lah-tex, is a program for typesetting documents developed in the late 70s. It allows you to create really pretty documents and in particular, documents that include mathematical notation, figures, and tables. It can be used to typeset pretty much anything that needs typesetting.
-LaTeX is a pretty big program (around 5GBs) so you will need sufficient space on your hard drive to accommodate it.</description>
-    </item>
-    
-    <item>
-      <title>Windows Install Instructions</title>
-      <link>https://timothyelder.com/plaintext/winods-install/</link>
-      <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://timothyelder.com/plaintext/winods-install/</guid>
-      <description>Windows Installation First a moment for evangelism. Windows is far and away the most popular operating system in the world for desktops and laptops, with 76% of the global market share, followed by macOS (16%) and then Linux (5%). Pretty much everyone has a working familiarity with Windows, and what more it is meant to be user-friendly for the average person. But Windows offers a much more What You See Is What You Get Approach to computing.</description>
-    </item>
-    
-    <item>
-      <title>The Terminal and Project Organization</title>
-      <link>https://timothyelder.com/plaintext/session-1/</link>
-      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://timothyelder.com/plaintext/session-1/</guid>
-      <description>The Terminal Switching to a plain text workflow requires that you adjust the way you interact with your computer. Rather than pointing and clicking and navigating through different windows we will be using what is a primitive technology in computing: the Terminal. It was once the case that all interactions with a computer were done with nothing more than a keyboard, not even a mouse. Of course computing has come a long way and most of your interactions with your computer take place with a mouse, touch pad or touch screen and it can be intimidating to approach the terminal, but it is really quite easy to use and helps for you to learn where things are actually located on your computer.</description>
+      <guid>https://timothyelder.com/photo-projects/chicago-photos/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -51,7 +23,7 @@ LaTeX is a pretty big program (around 5GBs) so you will need sufficient space on
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://timothyelder.com/about/</guid>
-      <description>Timothy Elder I&amp;rsquo;m a PhD candidate in Sociology at the University of Chicago and my research explores how knowledge is organized and used to inform expert work, particularly in the medical and scientific fields. My dissertation is a qualitative study that investigates how physicians and nurses working in Hospice and Palliative Medicine relate to their patients and interdigitate with medical experts from different specialties. In particular, I study how clinicians aid patients with chronic and life-limiting illnesses in making decisions about what kind and how much care they will receive.</description>
+      <description>Timothy Elder I&amp;rsquo;m a Research Associate at the Dartmouth Institute for Health Policy &amp;amp; Clinical Practice. I received my PhD in Sociology from the University of Chicago in 2024 and my research explores how knowledge is organized and used to inform expert work, particularly in the medical and scientific fields. My dissertation is a qualitative study that investigates how physicians and nurses working in Hospice and Palliative Medicine relate to their patients and interdigitate with medical experts from different specialties.</description>
     </item>
     
     <item>
@@ -69,7 +41,7 @@ LaTeX is a pretty big program (around 5GBs) so you will need sufficient space on
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://timothyelder.com/cameras/</guid>
-      <description>Nikon D40 Michigan Ave. | YONGNUO 50mm F1.8 | f/200, ISO 200 Nikon FM10 Harper Memorial Library | Kodak Ultramax 400 Promontory Point | Kodak Ultramax 400 Holga 120N Hyde Park | Kodak Gold 200 Bat | Kodak Gold 200 </description>
+      <description>Nikon D40 Michigan Ave. | YONGNUO 50mm F1.8 | f/200, ISO 200 Nikon FM10 Harper Memorial Library | Kodak Ultramax 400 Promontory Point | Kodak Ultramax 400 Holga 120N Hyde Park | Kodak Gold 200 Bat | Kodak Gold 200 Pentax MX Music Box Theater | Ilford HP5 Plus Black and White S. Wabash Ave. | Ilford HP5 Plus Black and White </description>
     </item>
     
     <item>
@@ -78,10 +50,10 @@ LaTeX is a pretty big program (around 5GBs) so you will need sufficient space on
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://timothyelder.com/cv/</guid>
-      <description>&lt;!DOCTYPE html&gt; cv github.com/timothyelder timothyelder@uchicago.edu 0000-0003-4164-1130 Download Vita TIMOTHY B. ELDER Department of Sociology
-University of Chicago
-Chicago, IL 60637
-education PhD, Sociology, University of Chicago In progress. Dissertation: Winning at a Losing Game - Divergent Ontologies and Shared Practices in Medicine. MA, Sociology, University of Chicago, 2018. BA, Cum Laude, Philosophy and Sociology, Kent State University, 2016. papers Timothy B. Elder and Austin C. Kozlowski. &#34;Status and Subfield: The Distribution of Sociological Specialization across Departments.</description>
+      <description>&lt;!DOCTYPE html&gt; cv github.com/timothyelder timothyelder@dartmouth.edu 0000-0003-4164-1130 Download Vita TIMOTHY B. ELDER The Dartmouth Institute
+Dartmouth College
+Hanover, NH 03755
+academic positions Research Associate, The Dartmouth Institute for Health Policy &amp; Clinical Practice, Geisel School of Medicine, Dartmouth College, 2024-2026. education PhD, Sociology, University of Chicago, 2024. Dissertation: Winning at a Losing Game - Divergent Ontologies and Shared Practices in Medicine. MA, Sociology, University of Chicago, 2018. BA, Cum Laude, Philosophy and Sociology, Kent State University, 2016.</description>
     </item>
     
     <item>
