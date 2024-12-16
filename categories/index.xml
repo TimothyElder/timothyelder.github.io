@@ -4,8 +4,9 @@
     <title>Categories on timothyelder.com</title>
     <link>https://timothyelder.com/categories/</link>
     <description>Recent content in Categories on timothyelder.com</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>© {year}</copyright><atom:link href="https://timothyelder.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© {year}</copyright>
+    <atom:link href="https://timothyelder.com/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

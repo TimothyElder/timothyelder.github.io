@@ -4,27 +4,24 @@
     <title>Tags on timothyelder.com</title>
     <link>https://timothyelder.com/tags/</link>
     <description>Recent content in Tags on timothyelder.com</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Thu, 30 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://timothyelder.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://timothyelder.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>chicago</title>
+      <title>Chicago</title>
       <link>https://timothyelder.com/tags/chicago/</link>
       <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://timothyelder.com/tags/chicago/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>photography</title>
+      <title>Photography</title>
       <link>https://timothyelder.com/tags/photography/</link>
       <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://timothyelder.com/tags/photography/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
